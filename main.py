@@ -25,6 +25,11 @@ for cards in lines:
 		costArray[card_cost] += num
 	except KeyError:
 		#contnues if the card has no cost
-		costArray[0] += num
+		if not cardData[name]["type"].startswith("Basic Land"):
+			costArray[0] += num
 		continue 
-print costArray
+for i in range(0, len(costArray)):
+	if i == 7:
+		print str(i) + "+: " + str(costArray[i])
+	else:
+		print str(i) + ": " + str(costArray[i])
