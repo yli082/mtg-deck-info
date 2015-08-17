@@ -40,5 +40,5 @@ for i in range(0, len(costArray)):
 		print str(i) + ": " + str(costArray[i])
 
 print "Sample hand:"
-for i in range(0, 6):
+for i in range(0, 7):
 	print cardList[random.randint(0, totalCards-1)]
