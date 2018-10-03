@@ -1,5 +1,6 @@
 import sys, re, json, random
 
+#comment
 try:
 	deck_file = open(sys.argv[1], 'r')
 except IndexError:
